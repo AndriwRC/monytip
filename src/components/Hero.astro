@@ -1,0 +1,23 @@
+---
+import { Picture } from 'astro:assets';
+import mainImg from '../assets/img/hero_illustration.png';
+import Button from './ui/Button.astro';
+---
+
+<section
+  class="flex flex-col md:flex-row gap-9 items-center lg:justify-center py-10 px-4 xs:py-12 xs:px-6 md:py-16 md:px-10 lg:py-18 lg:px-0"
+>
+  <div class="flex flex-col items-center gap-4 lg:gap-5 max-w-xl">
+    <div class="flex flex-col gap-2 text-center md:text-start">
+      <h1 class="text-4xl lg:text-6xl font-bold text-primary-800">
+        Aprende, Invierte, Crece
+      </h1>
+      <p class="text-base md:text-lg lg:text-xl font-medium text-secondary-500">
+        MonyTip es una app de educación financiera, con módulos interactivos,
+        recompensas y guía personalizada con IA.
+      </p>
+    </div>
+    <Button bgColor="primary" text="Prueba la app" />
+  </div>
+  <Picture class="max-w-xs" src={mainImg} alt={'Hero image'} />
+</section>

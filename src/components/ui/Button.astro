@@ -1,0 +1,21 @@
+---
+interface Props {
+  bgColor: 'primary' | 'dark' | 'white';
+  text: string;
+}
+
+const { bgColor, text } = Astro.props;
+
+const variants = {
+  primary: 'bg-primary-800 text-primary-100',
+  dark: 'bg-primary-900 text-primary-100',
+  white: 'bg-neutral-50 text-secondary-800',
+};
+
+const styles = variants[bgColor];
+---
+
+<button
+  class=`py-2 px-3 md:px-6 lg:py-4  rounded-xl text-base font-semibold ${styles}`
+  >{text}</button
+>

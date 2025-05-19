@@ -18,4 +18,11 @@
   --color-secondary-800: #1c2836;
   --color-secondary-500: #5376a0;
   --color-secondary-300: #95adc8;
+
+  /* Break-points */
+  --breakpoint-xs: 23rem;
+}
+
+html {
+  @apply font-primary;
 }
