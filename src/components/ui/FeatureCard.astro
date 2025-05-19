@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  feature: CollectionEntry<'features'>;
+}
+
+const { feature } = Astro.props;
+const { title, description, img } = feature.data;
+---
+
+<div
+  class="flex items-center gap-2 sm:gap-3 max-w-lg h-32 lg:h-48 py-2 px-4 lg:py-4 lg:px-6 rounded-xl bg-primary-200"
+>
+  <Image
+    class="shrink-0 size-16 xs:size-20 sm:size-24 lg:size-32 object-contain"
+    src={img.src}
+    alt={img.alt}
+  />
+  <div class="flex flex-col justify-center gap-1 lg:gap-3">
+    <h3 class="text-base sm:text-lg lg:text-2xl font-medium capitalize">
+      {title}
+    </h3>
+    <p class="text-xs sm:text-base lg:text-lg font-normal">
+      {description}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "aprende jugando",
+        "description": "Módulos interactivos y dinámicos que convierten conceptos financieros en desafíos entretenidos.",
+        "img": {
+            "src": "/src/assets/svg/shield.svg",
+            "alt": "aprende_jugando image"
+        }
+    },
+    {
+        "id": 2,
+        "title": "retos y recompensas",
+        "description": "Supera actividades diarias, gana monedas virtuales y personaliza tu mascota. ¡Cada paso cuenta y cada logro se celebra!",
+        "img": {
+            "src": "/src/assets/svg/pet.svg",
+            "alt": "aprende_jugando image"
+        }
+    },
+    {
+        "id": 3,
+        "title": "asesoría con IA",
+        "description": "Nuestro asistente inteligente 24/7 adapta el contenido a tu ritmo, resuelve tus dudas y te guía con recomendaciones personalizadas.",
+        "img": {
+            "src": "/src/assets/svg/bag.svg",
+            "alt": "aprende_jugando image"
+        }
+    },
+    {
+        "id": 4,
+        "title": "tú tienes el control",
+        "description": "Controla ingresos, crea presupuestos y visualiza tu progreso en tiempo real. Tu dinero bajo control, sin complicaciones.",
+        "img": {
+            "src": "/src/assets/svg/bag.svg",
+            "alt": "aprende_jugando image"
+        }
+    }
+]
