@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Mariana Cala",
+        "role": "CEO",
+        "img": "/src/assets/img/raul.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Andriw Rollo",
+        "role": "Web Developer & CTO",
+        "img": "/src/assets/img/andriw.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Santiago Marchena",
+        "role": "COO",
+        "img": "/src/assets/img/raul.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Raul Julio",
+        "role": "CRO",
+        "img": "/src/assets/img/raul.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Juan Duque",
+        "role": "Product Owner",
+        "img": "/src/assets/img/raul.jpeg"
+    }
+]

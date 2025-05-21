@@ -1,0 +1,21 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+
+interface Props {
+  member: CollectionEntry<'team_members'>;
+}
+
+const { member } = Astro.props;
+const { name, role, img } = member.data;
+---
+
+<article class="w-full max-w-3xs text-center">
+  <div
+    class="mx-auto mb-2 lg:mb-3 size-32 lg:size-40 rounded-full overflow-hidden"
+  >
+    <Image class="object-cover w-full" src={img} alt={name} />
+  </div>
+  <p class="lg:mb-2 text-lg lg:text-2xl font-medium">{name}</p>
+  <p class="text-sm lg:text-lg font-secondary text-secondary-500">{role}</p>
+</article>

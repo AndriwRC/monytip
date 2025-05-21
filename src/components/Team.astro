@@ -1,0 +1,18 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import MemberCard from './ui/MemberCard.astro';
+
+const members: CollectionEntry<'team_members'>[] =
+  await getCollection('team_members');
+---
+
+<section class="py-10 lg:py-32">
+  <h2 class="mb-12 lg:mb-16 text-center text-primary-800 capitalize">
+    Nuestro equipo
+  </h2>
+  <div
+    class="flex flex-wrap items-center justify-center gap-12 lg:gap-24 max-w-5xl mx-auto"
+  >
+    {members.map(member => <MemberCard member={member} />)}
+  </div>
+</section>

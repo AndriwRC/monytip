@@ -25,4 +25,14 @@ const pricing_plans = defineCollection({
   }),
 });
 
-export const collections = { features, pricing_plans };
+const team_members = defineCollection({
+  loader: file('src/data/team.json'),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      role: z.string(),
+      img: image(),
+    }),
+});
+
+export const collections = { features, pricing_plans, team_members };
