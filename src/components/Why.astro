@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import prototype from '../assets/img/prototype.png';
+---
+
+<section
+  class="flex flex-col md:flex-row items-center lg:justify-center gap-9 lg:gap-16 max-w-6xl mx-auto py-10 px-4 xs:py-12 xs:px-6 md:py-16 md:px-10 lg:py-18 lg:px-16"
+>
+  <div class="flex flex-col gap-4 max-w-lg md:max-w-3xl">
+    <h2 class="text-primary-800">
+      Tecnología, diseño y educación financiera en tu bolsillo
+    </h2>
+    <p class="text-sm lg:text-lg">
+      Nuestra app combina pedagogía, inteligencia artificial y una interfaz
+      amigable para que aprender sobre dinero sea parte natural de tu día a día.
+    </p>
+  </div>
+  <Image
+    class="w-full max-w-md lg:max-w-xl shrink-0"
+    src={prototype}
+    alt={'Prototype Phones'}
+  />
+</section>
