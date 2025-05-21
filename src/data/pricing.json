@@ -15,33 +15,27 @@
     {
         "id": 2,
         "name": "standard",
-        "label": "estándar",
-        "price": 53000.00,
+        "label": "Mensual Premium",
+        "price": 16900.00,
         "currency": "COP",
         "features": [
-            "Acceso ilimitado a todos los módulos",
-            "5 vidas, recargables con anuncios",
-            "Opciones básicas",
-            "Respuestas básicas",
-            "Opciones básicas",
-            "Respuestas básicas"
+            "Mensajes ilimitados en el Chatbot",
+            "Vidas ilimitadas",
+            "Sin anuncios",
+            "Respuestas Análisis de progreso avanzado"
         ]
     },
     {
         "id": 3,
         "name": "premium",
-        "label": "premium",
-        "price": 83000.00,
+        "label": "Anual Premium",
+        "price": 149900.00,
         "currency": "COP",
         "features": [
-            "Acceso ilimitado a todos los módulos",
+            "Mensajes ilimitados en el Chatbot",
             "Vidas ilimitadas",
-            "Opciones básicas",
-            "Respuestas básicas",
-            "Acceso ilimitado a todos los módulos",
-            "Vidas ilimitadas",
-            "Opciones básicas",
-            "Respuestas básicas"
+            "Sin anuncios",
+            "Respuestas Análisis de progreso avanzado"
         ]
     }
 ]

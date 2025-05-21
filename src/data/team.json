@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Mariana Cala",
         "role": "CEO",
-        "img": "/src/assets/img/raul.jpeg"
+        "img": "/src/assets/img/mariana.jpeg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "id": 3,
         "name": "Santiago Marchena",
         "role": "COO",
-        "img": "/src/assets/img/raul.jpeg"
+        "img": "/src/assets/img/santiago.jpeg"
     },
     {
         "id": 4,
@@ -27,6 +27,6 @@
         "id": 5,
         "name": "Juan Duque",
         "role": "Product Owner",
-        "img": "/src/assets/img/raul.jpeg"
+        "img": "/src/assets/img/juan.jpeg"
     }
 ]
