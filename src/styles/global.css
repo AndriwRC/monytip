@@ -24,8 +24,11 @@
 }
 
 html {
-  @apply font-primary text-secondary-800;
+  @apply font-primary text-secondary-800 scroll-smooth;
 }
 h2 {
   @apply text-2xl lg:text-4xl font-semibold;
+}
+section {
+  @apply scroll-mt-22 lg:scroll-mt-24;
 }

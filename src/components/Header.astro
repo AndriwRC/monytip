@@ -1,0 +1,15 @@
+---
+import Logo from '../assets/svg/logo.svg';
+import Navbar from './ui/Navbar';
+import Button from './ui/Button.astro';
+---
+
+<header
+  class="z-50 sticky top-0 lg:top-6 flex items-center justify-between mx-auto lg:w-11/12 max-w-7xl h-22 lg:h-24 py-4 px-4 lg:px-12 bg-primary-300/50 border-b lg:border lg:rounded-xl border-primary-300 backdrop-blur-sm shadow-md"
+>
+  <Logo class="w-24 h-fit" />
+  <Navbar client:only />
+  <div class="hidden lg:block">
+    <Button bgColor="primary" text="Prueba la App" />
+  </div>
+</header>

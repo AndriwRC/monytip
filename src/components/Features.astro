@@ -5,7 +5,10 @@ import FeatureCard from './ui/FeatureCard.astro';
 const features: CollectionEntry<'features'>[] = await getCollection('features');
 ---
 
-<section class="flex flex-col items-center gap-10 px-2 py-8 xs:px-4 lg:px-6">
+<section
+  id="features"
+  class="flex flex-col items-center gap-10 px-2 py-8 xs:px-4 lg:px-6"
+>
   <h2 class="text-center capitalize text-primary-800">
     Haz que cada peso cuente
   </h2>
