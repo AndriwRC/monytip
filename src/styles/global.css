@@ -26,3 +26,6 @@
 html {
   @apply font-primary text-secondary-800;
 }
+h2 {
+  @apply text-2xl lg:text-4xl font-semibold;
+}

@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import sectionImg from '../assets/img/did_you_know.png';
+---
+
+<section
+  class="flex flex-col md:flex-row items-center lg:justify-center gap-9 lg:gap-16 mt-10 xs:mt-12 md:mt-16 lg:mt-18 py-10 px-4 xs:py-12 xs:px-6 md:py-16 md:px-10 lg:py-18 lg:px-16 bg-primary-800"
+>
+  <Image
+    class="w-4/5 max-w-3xs shrink-0"
+    src={sectionImg}
+    alt="Did you know?"
+  />
+  <div class="flex flex-col max-w-lg md:max-w-3xl text-neutral-50">
+    <h2 class="mb-4">
+      ¿Sabías que millones se endeudan por no saber cómo manejar sus finanzas?
+    </h2>
+    <p class="mb-2 text-sm lg:text-lg">
+      Hoy en día, acceder a créditos, tarjetas o plataformas de pago es tan
+      fácil como hacer unos clics. Pero entender cómo manejar el dinero, evitar
+      deudas innecesarias o planear un presupuesto… eso no nos lo enseñan.
+    </p>
+    <p class="text-sm lg:text-lg font-secondary">
+      No es falta de herramientas, <span class="font-semibold"
+        >es falta de conocimiento.</span
+      > Y en un mundo digital, <span class="font-semibold">
+        eso no puede seguir pasando.</span
+      >
+    </p>
+  </div>
+</section>
