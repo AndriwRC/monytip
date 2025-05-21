@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import demo from '../assets/img/demo.png';
+import Button from './ui/Button.astro';
+---
+
+<section class="md:grid md:place-content-center md:px-6">
+  <div
+    class="flex flex-col-reverse md:flex-row items-center gap-8 mt-10 lg:mt-32 w-full md:w-fit py-10 md:px-18 md:py-18 lg:px-32 md:rounded-xl bg-primary-800"
+  >
+    <Image
+      src={demo}
+      alt={'Demo app'}
+      class="w-1/2 md:w-full max-w-3xs md:max-w-2xs rotate-12 lg:-rotate-12"
+    />
+    <div
+      class="flex flex-col items-center gap-4 lg:gap-8 max-w-lg px-6 text-center text-neutral-50"
+    >
+      <h2 class="capitalize">Prueba nuestra app</h2>
+      <p class="text-sm lg:text-lg">
+        Accede al prototipo de nuestra aplicación, haz parte de la revolución
+        financiera. Comienza hoy.
+      </p>
+      <Button bgColor="white" text="Ver Prototipo" />
+    </div>
+  </div>
+</section>
