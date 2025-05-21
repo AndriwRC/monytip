@@ -14,4 +14,15 @@ const features = defineCollection({
     }),
 });
 
-export const collections = { features };
+const pricing_plans = defineCollection({
+  loader: file('src/data/pricing.json'),
+  schema: z.object({
+    name: z.enum(['free', 'standard', 'premium']),
+    label: z.string(),
+    price: z.number(),
+    currency: z.string(),
+    features: z.array(z.string()),
+  }),
+});
+
+export const collections = { features, pricing_plans };

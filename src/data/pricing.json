@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "free",
+        "label": "gratis",
+        "price": 0.00,
+        "currency": "COP",
+        "features": [
+            "Acceso limitado a todos los módulos",
+            "5 vidas, recargables con anuncios",
+            "Opciones básicas",
+            "Respuestas básicas"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "standard",
+        "label": "estándar",
+        "price": 53000.00,
+        "currency": "COP",
+        "features": [
+            "Acceso ilimitado a todos los módulos",
+            "5 vidas, recargables con anuncios",
+            "Opciones básicas",
+            "Respuestas básicas",
+            "Opciones básicas",
+            "Respuestas básicas"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "premium",
+        "label": "premium",
+        "price": 83000.00,
+        "currency": "COP",
+        "features": [
+            "Acceso ilimitado a todos los módulos",
+            "Vidas ilimitadas",
+            "Opciones básicas",
+            "Respuestas básicas",
+            "Acceso ilimitado a todos los módulos",
+            "Vidas ilimitadas",
+            "Opciones básicas",
+            "Respuestas básicas"
+        ]
+    }
+]

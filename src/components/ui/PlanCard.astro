@@ -1,0 +1,56 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { HiOutlineCheckCircle } from 'react-icons/hi';
+import Button from './Button.astro';
+
+interface Props {
+  plan: CollectionEntry<'pricing_plans'>;
+}
+
+interface Styles {
+  colors: string;
+  btnVariant: 'primary' | 'dark' | 'white';
+}
+
+const { plan } = Astro.props;
+const { name, label, price, currency, features } = plan.data;
+
+const styleMap: Record<'free' | 'standard' | 'premium', Styles> = {
+  free: {
+    colors: 'bg-neutral-50 border border-primary-900 text-primary-900',
+    btnVariant: 'dark',
+  },
+  standard: {
+    colors: 'bg-linear-to-bl from-primary-500 to-purple-600 text-neutral-50',
+    btnVariant: 'white',
+  },
+  premium: {
+    colors: 'bg-linear-to-br from-primary-800 to-primary-950 text-neutral-50',
+    btnVariant: 'white',
+  },
+};
+
+const style: Styles = styleMap[name];
+---
+
+<article
+  class=`flex flex-col items-center gap-4 lg:gap-6 max-w-sm pt-3 pb-6 px-4 lg:pt-5 lg:pb-8 lg:px-6 rounded-xl bg-neutral-50 ${style.colors}`
+>
+  <h4 class="text-lg lg:text-2xl capitalize">Plan {label}</h4>
+  <span class="text-xl lg:text-3xl font-bold"
+    >{
+      price > 0 ? `${Intl.NumberFormat().format(price)} ${currency}` : 'Gratis'
+    }</span
+  >
+  <ul class="flex flex-col gap-2 lg:gap-4 grow">
+    {
+      features.map(feat => (
+        <li class="flex gap-2 items-center">
+          <HiOutlineCheckCircle size={24} />
+          <span class="text-xs lg:text-base">{feat}.</span>
+        </li>
+      ))
+    }
+  </ul>
+  <Button bgColor={style.btnVariant} text="Conocer más" />
+</article>

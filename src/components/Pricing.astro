@@ -1,0 +1,16 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import PlanCard from './ui/PlanCard.astro';
+
+const plans: CollectionEntry<'pricing_plans'>[] =
+  await getCollection('pricing_plans');
+---
+
+<section class="px-4 xs:px-6 md:px-10 lg:px-16">
+  <h2 class="mb-8 text-center text-primary-800 capitalize">
+    Conoce nuestros planes
+  </h2>
+  <div class="flex flex-wrap gap-8 justify-center">
+    {plans.map(plan => <PlanCard plan={plan} />)}
+  </div>
+</section>
