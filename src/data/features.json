@@ -22,7 +22,7 @@
         "title": "asesoría con IA",
         "description": "Nuestro asistente inteligente 24/7 adapta el contenido a tu ritmo, resuelve tus dudas y te guía con recomendaciones personalizadas.",
         "img": {
-            "src": "/src/assets/svg/bag.svg",
+            "src": "/src/assets/img/brain.png",
             "alt": "aprende_jugando image"
         }
     },
